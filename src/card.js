@@ -8,8 +8,15 @@ export default class Card {
   }
 
   cardFight(card2) { 
-    if ((this.type === "rock") && (card2.type === "scissor") || (this.type === "paper") && (card2.type === "rock") || (this.type === "scissor") && (this.card2 === "paper")) {
+    if ((this.type === "rock") && (card2.type === "scissor") || (this.type === "paper") && (card2.type === "rock") || (this.type === "scissor") && (card2.type === "paper")) {
       this.power++;
+    } else if ((card2.type === "rock") && (this.type === "scissor") || (card2.type === "paper") && (this.type === "rock") || (card2.type === "scissor") && (this.type === "paper")) {
+      card2.power++; 
+    } if ((this.type === "rock") && (card2.type === "scissor") || (this.type === "paper") && (card2.type === "rock") || (this.type === "scissor") && (card2.type === "paper")) {
+      --card2.power; 
+    } else if ((card2.type === "rock") && (this.type === "scissor") || (card2.type === "paper") && (this.type === "rock") || (card2.type === "scissor") && (this.type === "paper")) {
+      --this.power;
+      // } else (this.type === card2.type)
     } if ((this.power > card2.def) && (card2.power > this.def) || (this.power === card2.def) && (card2.power === this.def)) {
       return "tie";
     } else if (this.power > card2.def) {
