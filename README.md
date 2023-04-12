@@ -1,6 +1,6 @@
 # (Application Name)
 
-#### (Brief Description of Application)
+#### A Song of Scissors, Boulders, and Parchment
 
 #### By (Your Name Here)
 
@@ -15,6 +15,16 @@
 * Babel
 * eslinter
 ## Description
+
+This is a Game played out over 3 sets. 
+
+The  winner is determined by best 2 sets out of 3.
+
+A set is played out in Rounds where two players draw from their own 30 card decks between 3-5 times.
+
+Each time/rep the players compare the card qualities of the cards they drew, and a winner/loser is determined for the set based on Power and Defense 1/5-5/5.
+
+A set ends when a player runs out of cards in their deck. The winner of a set is determined by who has the most points in a set.
 
 ## Setup/Installation Requirements
 
