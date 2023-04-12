@@ -1,11 +1,25 @@
-export default class Triangle {
-  constructor(side1, side2, side3) {
-    this.side1 = side1;
-    this.side2 = side2;
-    this.side3 = side3;
-}
-
-  checkType() {
-    return "I can't answer that yet!";
+export default class Card {
+  constructor(name) {
+    
   }
 }
+
+
+
+
+
+
+// export default class Card {
+//   constructor(name, power, def, type, ability) {
+//     this.name = name;
+//     this.power = power;
+//     this.def = def;
+//     this.type = type;
+//     this.ability = ability;
+//   }
+
+//   checkType() {
+//     return "I can't answer that yet!";
+    
+//   }
+// }

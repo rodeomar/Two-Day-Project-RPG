@@ -1,7 +1,10 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import Triangle from './triangle.js';
+import Game from './game.js';
+import Player from './player.js';
+import Card from './card.js';
+
 
 function handleTriangleForm(event) {
   event.preventDefault();
