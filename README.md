@@ -54,6 +54,11 @@ To nuance this, factions have abilities. Rocks can raise their defense. Paper ca
 * Starting a development server with $ npm run start
 * Linting JS files in the src folder with $ npm run lint
 * Running tests with Jest using $ npm run test
+* IMPORTANT: You need to install Jest and Babel, too. 
+--> Use: $ npm install jest@24.9.0 --save-dev
+    and add "test": "jest" under "scripts" in package.json
+--> Use: $ npm install @babel/core@7.18.6 --save-dev
+--> Use: $ npm install @babel/plugin-transform-modules-commonjs@7.18.6 --save-dev
 
 
 ## Known Bugs
