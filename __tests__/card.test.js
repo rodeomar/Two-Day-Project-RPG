@@ -27,7 +27,7 @@ describe('Card', () => {
   });
   test('should correctly determine if a type advantage gives card1 more power', () => {
     const card1 = new Card("rocky", "rock", 3, 2, "placeholder");
-    const card2 = new Card("scissoro", "scissor", 2, 3, "placeholder");
+    const card2 = new Card("scissoro", "scissor", 1, 3, "placeholder");
     expect(card1.cardFight(card2)).toEqual("card1 wins");
   });
 });

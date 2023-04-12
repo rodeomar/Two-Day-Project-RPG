@@ -7,8 +7,10 @@ export default class Card {
     this.ability = ability;
   }
 
-  cardFight(card2) {
-    if ((this.power > card2.def) && (card2.power > this.def) || (this.power === card2.def) && (card2.power === this.def)) {
+  cardFight(card2) { 
+    if ((this.type === "rock") && (card2.type === "scissor") || (this.type === "paper") && (card2.type === "rock") || (this.type === "scissor") && (this.card2 === "paper")) {
+      this.power++;
+    } if ((this.power > card2.def) && (card2.power > this.def) || (this.power === card2.def) && (card2.power === this.def)) {
       return "tie";
     } else if (this.power > card2.def) {
       return "card1 wins";
