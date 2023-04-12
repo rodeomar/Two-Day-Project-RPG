@@ -30,6 +30,11 @@ describe('Card', () => {
     const card2 = new Card("scissoro", "scissor", 1, 3, "placeholder");
     expect(card1.cardFight(card2)).toEqual("card1 wins");
   });
+  test('should correctly determine if a type disadvantage gives card1 less power', () => {
+    const card1 = new Card("rocky", "rock", 4, 4, "placeholder");
+    const card2 = new Card("paperio", "paper", 4, 3, "placeholder");
+    expect(card1.cardFight(card2)).toEqual("card2 wins");
+  });
 });
 
 
