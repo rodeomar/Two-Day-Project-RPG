@@ -18,9 +18,13 @@ describe('Card', () => {
   test('should correctly determine if we tie', () => {
     const card1 = new Card("rocky", "rock", 5, 5, "placeholder");
     const card2 = new Card("rocko", "rock", 5, 5, "placeholder");
-    expect(card1.cardFight(card2)).toEqual("tie")
+    expect(card1.cardFight(card2)).toEqual("tie");
   });
-  test()
+  test('should correctly determine if cards tie by beating each other', () => {
+    const card1 = new Card("rocky", "rock", 3, 2, "placeholder");
+    const card2 = new Card("rocko", "rock", 3, 2, "placeholder");
+    expect(card1.cardFight(card2)).toEqual("tie");
+  });
 });
 
 
