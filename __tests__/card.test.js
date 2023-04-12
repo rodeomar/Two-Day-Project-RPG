@@ -10,4 +10,12 @@ describe('Card', () => {
     expect(card.def).toEqual(5);
     expect(card.ability).toEqual("placeholder");
   });
+  test('should correctly determine if a power is greater than another defense', () => {
+    const card1 = new Card("rocky", "rock", 5, 5, "placeholder");
+    const card2 = new Card("rocko", "rock", 5, 4, "placeholder");
+    expect(card1.cardFight(card2)).toEqual("card1 wins");
+  });
 });
+
+
+
