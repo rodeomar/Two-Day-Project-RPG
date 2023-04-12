@@ -6,12 +6,22 @@ export default class Card {
     this.def = def;
     this.ability = ability;
   }
+
+  cardFight(card2) {
+    if ((this.power > card2.def) && (card2.power > this.def) || (this.power === card2.def) && (card2.power === this.def)) {
+      return "tie";
+    } else if (this.power > card2.def) {
+      return "card1 wins";
+    } else if (card2.power > this.def) {
+      return "card2 wins";
+    }
+  }
 }
 
 
 
-
-
+// const card1 = new Card();
+// const card2 = new Card();
 
 // export default class Card {
 //   constructor(name, power, def, type, ability) {
@@ -26,4 +36,4 @@ export default class Card {
 //     return "I can't answer that yet!";
     
 //   }
-// }
+//
