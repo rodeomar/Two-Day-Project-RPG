@@ -1,6 +1,10 @@
 export default class Card {
-  constructor(name) {
-    
+  constructor(name, type, power, def, ability) {
+    this.name = name;
+    this.type = type;
+    this.power = power;
+    this.def = def;
+    this.ability = ability;
   }
 }
 
