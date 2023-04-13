@@ -13,14 +13,11 @@ export default class Player {
     this.lead = false;
     this.bet = bet;
   }
-  chooseDeck(deck1, deck2) {
-    
-  }
 
   makeDeck(array1, array2) {
-    let newArray = [];
-    newArray = array1.concat(array2);
-    return newArray;
+    this.deck = [];
+    this.deck = array1.concat(array2);
+    return this.deck;
   }
 
 }
