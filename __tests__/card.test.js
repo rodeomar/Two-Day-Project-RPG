@@ -1,4 +1,4 @@
-import Card from './../src/card.js';
+import { Card } from './../src/card.js';
 
 describe('Card', () => {
 
@@ -36,6 +36,21 @@ describe('Card', () => {
     expect(card1.cardFight(card2)).toEqual("card2 wins");
   });
 });
+
+
+
+
+
+
+// describe('makeDeck', () => {
+
+//   test('should combine two arrays array1 and array2', () => {
+//     const array1 = rockCollection
+//     const array2 = paperCollection
+//     expect(array1.makeDeck())
+
+//   })
+// });
 
 
 

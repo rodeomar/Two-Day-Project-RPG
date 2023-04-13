@@ -1,9 +1,24 @@
+import {Card, rockCollection, paperCollection, scissorCollection} from './../src/card.js';
+
+Card;
+rockCollection;
+paperCollection;
+scissorCollection;
+
 export default class Player {
-  constructor(deck, discard, points, lead, bet) {
-    this.deck = deck;
-    this.discard = discard;
+  constructor(points, bet) {
+    this.deck = [];
+    this.discard = [];
     this.points = points;
-    this.lead = lead;
+    this.lead = false;
     this.bet = bet;
   }
+  chooseDeck(deck1, deck2) {
+    
+  }
+
+  makeDeck(array1, array2) {
+
+  }
+
 }
