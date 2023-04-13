@@ -1,4 +1,4 @@
-class Board {
+export default class Board {
   constructor() {
     this.stage = [];
     this.p1Discard = [];
