@@ -18,7 +18,9 @@ export default class Player {
   }
 
   makeDeck(array1, array2) {
-
+    let newArray = [];
+    newArray = array1.concat(array2);
+    return newArray;
   }
 
 }
