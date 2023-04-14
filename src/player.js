@@ -1,5 +1,7 @@
-import {Card, rockCollection, paperCollection, scissorCollection} from './../src/card.js';
+// import Board from './board.js';
+import { Card, rockCollection, paperCollection, scissorCollection } from './../src/card.js';
 
+// Board;
 Card;
 rockCollection;
 paperCollection;
@@ -16,8 +18,16 @@ export default class Player {
 
   makeDeck(array1, array2) {
     this.deck = [];
-    this.deck = array1.concat(array2);
-    return this.deck;
+    if (this.deck.length ) {
+      this.deck = array1.concat(array2);
+      return this.deck;
+    }
   }
 
+  roundOver() {
+    if (this.deck === []) {
+      return "round over!" + " " + "start a new round";
+    }
+  }
 }
+

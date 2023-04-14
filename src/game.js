@@ -5,4 +5,5 @@ export default class Game {
     this.round = round;
     this.turn = turn;
   }
+  
 }
